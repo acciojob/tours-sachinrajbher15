@@ -10,7 +10,7 @@ function Tour({ data, removeTour }) {
                 <p id='tour-item-para-rec6d6T3q5EBIdCfD' className={showMore ? 'expanded' : ''}>
                     {showMore ? data.info : `${data.info.substring(0, 200)}...`}
                     <button id='see-more-rec6d6T3q5EBIdCfD' onClick={() => setShowMore(!showMore)}>
-                        {showMore ? "Show Less" : "See more"}
+                        {showMore ? "Show less" : "See more"}
                     </button>
                 </p>
                 <img id='tour-image' className={showMore ? 'expanded' : ''} src={data.image} alt={data.name}></img>
