@@ -7,9 +7,9 @@ function Tour({ data, removeTour }) {
         <li>
             <div className='tour-container'>
                 <h3 id='tour-name'>{data.name}</h3>
-                <p id='tour-item-para-rec6d6T3q5EBIdCfD' className={showMore ? 'see-more-rec6d6T3q5EBIdCfD' : ''}>
+                <p id='tour-item-para-rec6d6T3q5EBIdCfD' className={showMore ? 'expanded' : ''}>
                     {showMore ? data.info : `${data.info.substring(0, 200)}...`}
-                    <button onClick={() => setShowMore(!showMore)}>
+                    <button id='see-more-rec6d6T3q5EBIdCfD' onClick={() => setShowMore(!showMore)}>
                         {showMore ? "Show Less" : "Read More"}
                     </button>
                 </p>
