@@ -61,7 +61,7 @@ body {
     list-style: none;
 }
 
-#tour-name, #tour-info, #tour-image, #tour-price {
+#tour-name, #tour-item-para, #tour-image, #tour-price {
     margin: 0;
     width: 100%;
     border: 1px solid tan;
@@ -75,7 +75,7 @@ body {
     font-size: 1.5vw; /* Responsive font size */
 }
 
-#tour-info {
+#tour-item-para {
     height: 20vh; /* Default height for the info section */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     overflow: hidden;
@@ -86,7 +86,7 @@ body {
     transition: height 0.3s ease;
 }
 
-#tour-info.expanded {
+#tour-item-para.expanded {
     height: 30vh; /* Expanded height */
 }
 
@@ -119,7 +119,7 @@ body {
 }
 
 /* Styling for the "Read More" button */
-#tour-info button {
+#tour-item-para button {
     background-color: transparent;
     color: blue;
     border: none;
@@ -129,11 +129,11 @@ body {
     margin-top: 1vh;
 }
 
-#tour-info button:hover {
+#tour-item-para button:hover {
     color: darkblue;
 }
 
-#remove-btn {
+#delete-btn {
     background-color: rgb(236, 157, 157);
     border: none;
     padding: 1vh 2vw;
@@ -143,7 +143,7 @@ body {
     font-size: 1.2vw; /* Responsive font size */
 }
 
-#remove-btn:hover {
+#delete-btn:hover {
     background-color: red;
 }
 
@@ -154,7 +154,7 @@ body {
         height: 55vh;
     }
 
-    #tour-info {
+    #tour-item-para {
         height: 25vh; /* Adjusted for tablets */
     }
 
@@ -177,7 +177,7 @@ body {
         height: 45vh;
     }
 
-    #tour-info {
+    #tour-item-para {
         height: 20vh; /* Adjusted for mobile */
     }
 
