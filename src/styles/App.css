@@ -61,7 +61,7 @@ body {
     list-style: none;
 }
 
-#tour-name, #tour-item-para, #tour-image, #tour-price {
+#tour-name, #tour-item-para-rec6d6T3q5EBIdCfD, #tour-image, #tour-price {
     margin: 0;
     width: 100%;
     border: 1px solid tan;
@@ -75,7 +75,7 @@ body {
     font-size: 1.5vw; /* Responsive font size */
 }
 
-#tour-item-para {
+#tour-item-para-rec6d6T3q5EBIdCfD {
     height: 20vh; /* Default height for the info section */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     overflow: hidden;
@@ -86,7 +86,7 @@ body {
     transition: height 0.3s ease;
 }
 
-#tour-item-para.expanded {
+#tour-item-para-rec6d6T3q5EBIdCfD.expanded {
     height: 30vh; /* Expanded height */
 }
 
@@ -119,7 +119,7 @@ body {
 }
 
 /* Styling for the "Read More" button */
-#tour-item-para button {
+#tour-item-para-rec6d6T3q5EBIdCfD button {
     background-color: transparent;
     color: blue;
     border: none;
@@ -129,11 +129,11 @@ body {
     margin-top: 1vh;
 }
 
-#tour-item-para button:hover {
+#tour-item-para-rec6d6T3q5EBIdCfD button:hover {
     color: darkblue;
 }
 
-#delete-btn {
+#delete-btn-rec6d6T3q5EBIdCfD {
     background-color: rgb(236, 157, 157);
     border: none;
     padding: 1vh 2vw;
@@ -143,7 +143,7 @@ body {
     font-size: 1.2vw; /* Responsive font size */
 }
 
-#delete-btn:hover {
+#delete-btn-rec6d6T3q5EBIdCfD:hover {
     background-color: red;
 }
 
@@ -154,7 +154,7 @@ body {
         height: 55vh;
     }
 
-    #tour-item-para {
+    #tour-item-para-rec6d6T3q5EBIdCfD {
         height: 25vh; /* Adjusted for tablets */
     }
 
@@ -177,7 +177,7 @@ body {
         height: 45vh;
     }
 
-    #tour-item-para {
+    #tour-item-para-rec6d6T3q5EBIdCfD {
         height: 20vh; /* Adjusted for mobile */
     }
 
