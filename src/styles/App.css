@@ -1,12 +1,195 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
+body {
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    height: 100vh;
+    box-sizing: border-box;
+    font-size: 1rem; /* Default font size */
+}
 
-button{
-    color: #27aedb;
-    text-align: center;
+#main {
+    padding: 0;
+    margin: 0;
+}
+
+#main-heading {
+    display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    background-color: tan;
+    height: 8vh; /* Responsive height */
+    font-family: cursive;
+    font-weight: bold;
+    margin: 0;
+    font-size: 2vw; /* Responsive font size */
+}
+
+.tours-container {
+    margin: 2vh auto;
+    padding: 1vh;
+    background-color: tan;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw; /* Responsive gap */
+    box-sizing: border-box;
+}
+
+.tour-container {
+    padding: 2vh; /* Adjusted padding for responsiveness */
+    border: 1px solid black;
+    background-color: bisque;
+    width: 30vw; /* Responsive width */
+    height: 85vh; /* Responsive height */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vw; /* Responsive gap between elements */
+    box-sizing: border-box;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tour-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tours-container li {
+    list-style: none;
+}
+
+#tour-name, #tour-info, #tour-image, #tour-price {
+    margin: 0;
+    width: 100%;
+    border: 1px solid tan;
+    box-sizing: border-box;
+}
+
+#tour-name {
+    height: 5vh; /* Responsive height */
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5vw; /* Responsive font size */
+}
+
+#tour-info {
+    height: 20vh; /* Default height for the info section */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1vw;
+    flex-grow: 1;
+    font-size: 1vw; /* Responsive font size */
+    transition: height 0.3s ease;
+}
+
+#tour-info.expanded {
+    height: 30vh; /* Expanded height */
+}
+
+#tour-image {
+    max-height: 40vh; /* Responsive image size */
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: max-height 0.3s ease;
+}
+
+#tour-image.expanded {
+    max-height: 20vh; /* Smaller image when expanded */
+}
+
+#tour-price {
+    height: 8vh; /* Responsive height */
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5vw; /* Responsive font size */
+}
+
+#tour-price:hover {
+    background-color: tan;
+}
+
+/* Styling for the "Read More" button */
+#tour-info button {
+    background-color: transparent;
+    color: blue;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1vw; /* Responsive button font size */
+    text-decoration: underline;
+    margin-top: 1vh;
+}
+
+#tour-info button:hover {
+    color: darkblue;
+}
+
+#remove-btn {
+    background-color: rgb(236, 157, 157);
+    border: none;
+    padding: 1vh 2vw;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.2vw; /* Responsive font size */
+}
+
+#remove-btn:hover {
+    background-color: red;
+}
+
+/* Responsive Design for tablets and mobile devices */
+@media (max-width: 1024px) {
+    .tour-container {
+        width: 45vw;
+        height: 55vh;
+    }
+
+    #tour-info {
+        height: 25vh; /* Adjusted for tablets */
+    }
+
+    #tour-image {
+        max-height: 18vh;
+    }
+
+    #tour-name {
+        font-size: 3vw;
+    }
+
+    #tour-price {
+        font-size: 1.8vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .tour-container {
+        width: 70vw;
+        height: 45vh;
+    }
+
+    #tour-info {
+        height: 20vh; /* Adjusted for mobile */
+    }
+
+    #tour-image {
+        max-height: 15vh;
+    }
+
+    #tour-name {
+        font-size: 4vw;
+    }
+
+    #tour-price {
+        font-size: 2vw;
+    }
 }
